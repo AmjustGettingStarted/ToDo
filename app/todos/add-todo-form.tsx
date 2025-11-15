@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { createTodo } from "@/app/actions/todos";
+import { createTodo } from "@/actions/todos";
 import { useRouter } from "next/navigation";
 
 export default function AddTodoForm() {
