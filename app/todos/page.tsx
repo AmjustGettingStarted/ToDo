@@ -1,4 +1,4 @@
-import { getTodos, createTodo } from "@/app/actions/todos";
+import { getTodos } from "@/actions/todos";
 import AddTodoForm from "./add-todo-form";
 import TodoList from "./todo-list";
 
