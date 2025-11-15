@@ -9,7 +9,6 @@ import {
   SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
-import { Button } from "@/components/ui/button";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 
@@ -45,32 +44,20 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <header className="flex justify-end items-center p-4 gap-2 h-16">
-              <ModeToggle />
+            <header className="flex justify-end items-center p-4 gap-4 h-16">
               <SignedOut>
-                <SignInButton>
-                  <Button
-                    className="cursor-pointer rounded-full"
-                    variant={"outline"}
-                  >
-                    Sign In
-                  </Button>
-                </SignInButton>
-
+                <SignInButton />
                 <SignUpButton>
-                  <Button
-                    variant={"outline"}
-                    className=" rounded-full cursor-pointer"
-                  >
+                  <button className="bg-[#6c47ff] text-white rounded-full font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 cursor-pointer">
                     Sign Up
-                  </Button>
+                  </button>
                 </SignUpButton>
               </SignedOut>
               <SignedIn>
                 <UserButton />
               </SignedIn>
+              <ModeToggle />
             </header>
-
             {children}
           </ThemeProvider>
         </body>
