@@ -5,7 +5,7 @@ import { auth } from "@clerk/nextjs/server";
 
 export async function getTodos() {
   const supabase = supabaseServer();
-  const { userId } = auth();
+  const { userId } = await auth();
 
   const { data, error } = await supabase
     .from("todos")
@@ -19,7 +19,7 @@ export async function getTodos() {
 
 export async function createTodo(title: string) {
   const supabase = supabaseServer();
-  const { userId } = auth();
+  const { userId } = await auth();
 
   const { error } = await supabase.from("todos").insert({
     title,
