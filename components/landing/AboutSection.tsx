@@ -1,7 +1,7 @@
 export default function AboutSection() {
   return (
-    <section className="container px-4 py-20 md:py-32">
-      <div className="mx-auto max-w-5xl">
+    <section className="py-20 md:py-32">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           {/* Left: Solid Color Illustration */}
           <div className="flex items-center justify-center">

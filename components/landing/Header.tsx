@@ -8,7 +8,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background">
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* App Name */}
           <Link href="/" className="text-lg font-semibold text-foreground">
