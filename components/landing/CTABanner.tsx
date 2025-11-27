@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export default function CTABanner() {
   return (
-    <section className="container px-4 py-20 md:py-32">
-      <div className="mx-auto max-w-3xl">
-        <div className="rounded-xl border border-border bg-muted p-8 md:p-12">
+    <section className="py-20 md:py-32">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="mx-auto max-w-3xl rounded-xl border border-border bg-muted p-8 md:p-12">
           <div className="flex flex-col items-center space-y-6 text-center">
             <h2 className="text-2xl font-semibold text-foreground sm:text-3xl">
               Start organizing your day today.
